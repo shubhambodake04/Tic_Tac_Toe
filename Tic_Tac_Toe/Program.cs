@@ -11,9 +11,9 @@ namespace Tic_Tac_Toe
         static void Main(string[] args)
         {
             TicTacToeGame ticTacToeGame = new TicTacToeGame();
-            ticTacToeGame.Board();
-            ticTacToeGame.Selection();
-            Console.ReadLine();
+            char[] board = ticTacToeGame.Board();
+            ticTacToeGame.Select();
+            
         }
     }
 }
