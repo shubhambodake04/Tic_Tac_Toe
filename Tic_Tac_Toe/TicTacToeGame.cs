@@ -9,42 +9,31 @@ namespace Tic_Tac_Toe
     class TicTacToeGame
     {
         char[] board = new char[10];
-     
         public char[] Board()
         {
-            for (int i = 1; i < 10; i++)
+            for (int i = 1; i < board.Length; i++)
             {
                 board[i] = ' ';
             }
             return board;
         }
 
-        public void Select()
+        public char Select()
         {
+            Console.WriteLine("Choose a player: X or O");
+            string userChoice = Console.ReadLine();
+            if (userChoice == "X") return 'X';
+            if (userChoice == "O") return 'O';
+            return 'X';
+        }
 
-
-            Console.WriteLine("Enter your Choice");
-            Console.WriteLine("1. you will choose X\n 2. you will choose O  ");
-            int option = Convert.ToInt32(Console.ReadLine());
-
-
-            switch (option)
-            {
-                case 1:
-                    Console.WriteLine("");
-                    char playerOneSelection = 'X';
-                    char computer = 'O';
-                    break;
-                case 2:
-                    Console.WriteLine("");
-                    playerOneSelection = 'O';
-                    computer = 'X';
-                    break;
-                default:
-                    break;
-
-            }
-
+        public void Show_Board(char[] board)
+        {
+            Console.WriteLine("| " + board[1] + "| " + board[2] + "| " + board[3] + "|");
+            Console.WriteLine("----------");
+            Console.WriteLine("| " + board[4] + "| " + board[5] + "| " + board[6] + "|");
+            Console.WriteLine("----------");
+            Console.WriteLine("| " + board[7] + "| " + board[8] + "| " + board[9] + "|");
         }
 
     }

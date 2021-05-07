@@ -13,6 +13,9 @@ namespace Tic_Tac_Toe
             TicTacToeGame ticTacToeGame = new TicTacToeGame();
             char[] board = ticTacToeGame.Board();
             ticTacToeGame.Select();
+            ticTacToeGame.Show_Board(board);
+
+            Console.ReadLine();
             
         }
     }
