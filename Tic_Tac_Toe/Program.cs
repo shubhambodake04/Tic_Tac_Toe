@@ -12,6 +12,7 @@ namespace Tic_Tac_Toe
         {
             TicTacToeGame ticTacToeGame = new TicTacToeGame();
             ticTacToeGame.Board();
+            ticTacToeGame.Selection();
             Console.ReadLine();
         }
     }
