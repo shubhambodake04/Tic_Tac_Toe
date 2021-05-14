@@ -27,7 +27,7 @@ namespace Tic_Tac_Toe
             return 'X';
         }
 
-        public void Show_Board(char[] board)
+        public void ShowBoard(char[] board)
         {
             Console.WriteLine("| " + board[1] + "| " + board[2] + "| " + board[3] + "|");
             Console.WriteLine("----------");
