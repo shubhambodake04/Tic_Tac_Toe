@@ -35,7 +35,6 @@ namespace Tic_Tac_Toe
             Console.WriteLine("----------");
             Console.WriteLine("| " + board[7] + "| " + board[8] + "| " + board[9] + "|");
         }
-
     }
 }
 
